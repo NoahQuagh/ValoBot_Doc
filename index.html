@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ValoBot — Documentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="assets/style/styleDoc.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+<header class="topbar">
+  <button class="burger" id="burger" aria-label="Ouvrir la navigation"></button>
+  <a href="#" class="brand"><span class="mark" id="brandMark"></span>ValoBot <em>docs</em></a>
+  <nav class="topbar-nav">
+    <a href="#">Changelog</a>
+    <a href="#" class="pill">Inviter</a>
+  </nav>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="search-wrap">
+    <label class="search">
+      <span id="searchIcon"></span>
+      <input type="search" id="search" placeholder="Rechercher une commande…" aria-label="Rechercher">
+      <kbd>Ctrl K</kbd>
+    </label>
+  </div>
+  <nav class="nav" id="nav"></nav>
+  <div class="sidebar-foot">
+    <button class="icon-btn" id="themeLight" title="Thème clair" aria-label="Thème clair"></button>
+    <button class="icon-btn" id="themeDark" title="Thème sombre" aria-label="Thème sombre"></button>
+    <span class="ver">v2.4.0</span>
+  </div>
+</aside>
+<div class="scrim" id="scrim"></div>
+
+<main class="main">
+  <article class="page" id="page"></article>
+</main>
+
+<script src="assets/js/DocCommand.js"></script>
+<script src="assets/js/scriptDoc.js"></script>
+</body>
+</html>
